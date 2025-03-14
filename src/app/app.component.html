@@ -1,0 +1,42 @@
+<div class="container mt-4">
+  <div class="card shadow-lg p-4">
+    <h2 class="text-center">Calculadora</h2>
+
+    <form>
+      <div class="mb-3">
+        <label for="num1" class="form-label">Número 1</label>
+        <input type="number" id="num1" class="form-control" [(ngModel)]="num1" name="num1">
+      </div>
+
+      <div class="mb-3">
+        <label for="num2" class="form-label">Número 2</label>
+        <input type="number" id="num2" class="form-control" [(ngModel)]="num2" name="num2">
+      </div>
+
+      <div class="mb-3 text-center">
+        <h3 class="border p-2 rounded bg-light">{{sum}}</h3>
+      </div>
+
+      <div class="row g-2">
+        <div class="col">
+          <button type="button" class="btn btn-primary w-100" (click)="onClicksum()">+</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-secondary w-100" (click)="op1()">-</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-success w-100" (click)="op2()">×</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-warning w-100" (click)="op3()">÷</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-info w-100" (click)="op5()">^</button>
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-danger w-100" (click)="op4()">AC</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
